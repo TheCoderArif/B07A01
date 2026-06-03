@@ -7,7 +7,7 @@ const filterEvenNumbers = (arr:number[]) => {
             finalArray.push(value)
         }
     })
-    // console.log(finalArray);
+    
     return finalArray;
 }
 
@@ -29,7 +29,7 @@ const reverseString = (input: string) => {
     }
     const finalResult = newArray.join('');
 
-    // console.log(finalResult);
+    
     return finalResult;
 
 }
@@ -42,10 +42,10 @@ type StringOrNumber = string | number ;
 
 const checkType = (input : StringOrNumber) => {
     if (typeof input === 'string'){
-        // console.log('String');
+        
         return 'String';
     }else if(typeof input === 'number'){
-        // console.log('Number');
+        
         return 'Number';
     }
 }
@@ -63,7 +63,7 @@ type UserInfo = {
 
 const getProperty = (user:UserInfo , key : keyof UserInfo)=>{
     const res = user[`${key}`];
-    // console.log(res);
+    
     return res;
 }
 
@@ -79,7 +79,7 @@ interface Book {
 
 const toggleReadStatus = (book:Book) => {
     const newObj = {...book, isRead: true}
-    // console.log(newObj);
+    
     return newObj;
 
 }
@@ -110,7 +110,7 @@ class Student extends Person {
     }
     getDetails(){
         const details = {Name: this.name, Age: this.age, Grade: this.grade};
-        // console.log(details);
+        
         return details;
     }
 }
@@ -128,7 +128,7 @@ const getIntersection = (arr1: number[], arr2: number[]) => {
     
     arr1.map(value => arr2.includes(value) ? newArr.push(value) : '')
 
-    console.log(newArr);
+    
     return newArr;
 
 }
